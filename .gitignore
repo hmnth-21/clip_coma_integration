@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+.DS_Store
+
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Large model/data/output files
+clip_coma_cifar100.pt
+data/
+results/
+
+# macOS
+.DS_Store
