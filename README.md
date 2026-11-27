@@ -11,7 +11,7 @@ A rigorous empirical investigation and research implementation of **task-increme
 
 ---
 
-## 🎯 Executive Summary & Key Results
+## Executive Summary & Key Results
 
 Sequential fine-tuning of neural networks typically induces severe **catastrophic forgetting**. This project evaluates whether exponential moving average weight consolidation (**CoMA**) applied solely to CLIP's visual encoder can mitigate catastrophic forgetting without requiring an exemplar memory buffer.
 
@@ -36,7 +36,7 @@ Sequential fine-tuning of neural networks typically induces severe **catastrophi
 
 ---
 
-## 🧠 Continual Model Averaging (CoMA)
+## Continual Model Averaging (CoMA)
 
 CoMA consolidates knowledge by maintaining a running exponential moving average (EMA) of model parameters across the sequential task stream:
 
@@ -52,7 +52,7 @@ where:
 
 ---
 
-## 🏗️ Repository Architecture
+## Repository Architecture
 
 ```
 clip_coma_integration/
@@ -91,7 +91,7 @@ clip_coma_integration/
 
 ---
 
-## 🚀 Setup & Installation
+## Setup & Installation
 
 ### 1. Prerequisites
 - Python $\ge 3.10$ (Tested on Python 3.14.2)
@@ -138,7 +138,7 @@ python smoke_test.py
 
 ---
 
-## 🔬 Executing Experiments
+## Executing Experiments
 
 ### Run Complete Pipeline (Stages 24–28)
 ```bash
@@ -171,7 +171,7 @@ python run_clip_coma.py
 
 ---
 
-## 📂 Results Directory Structure
+## Results Directory Structure
 
 The repository contains all experimental outputs under `results/`:
 
@@ -210,7 +210,7 @@ results/
 
 ---
 
-## 🛡️ Checkpoint & Resumption Mechanics
+## Checkpoint & Resumption Mechanics
 
 The pipeline incorporates automated state-recovery guards:
 1. **Stage-Level Guard**: If `results/<method>/results.json` exists, the stage loads the cached outputs directly without re-executing.
@@ -230,7 +230,7 @@ To ensure honest, reproducible scientific claims:
 
 ---
 
-## 📚 References
+## References
 
 - Radford, A., et al. (2021). *Learning Transferable Visual Models From Natural Language Supervision*. ICML 2021.
 - McCloskey, M., & Cohen, N. J. (1989). *Catastrophic interference in connectionist networks: The sequential learning problem*. Psychology of Learning and Motivation.
