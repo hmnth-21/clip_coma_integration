@@ -167,7 +167,7 @@ def run_clip_coma(tasks, clip, epochs=1, alpha=0.7, device="cuda", lr=1e-5,
                 latest_id = max(completed_ids)
                 ckpt_path = os.path.join(checkpoint_dir, f"checkpoint_task_{latest_id}.pt")
                 print(f"Resuming from checkpoint {ckpt_path} (completed task {latest_id + 1}/{task_count})")
-                ckpt = torch.load(ckpt_path, map_location=device)
+                ckpt = torch.load(ckpt_path, map_location=device, weights_only=False)
                 clip.model.load_state_dict(ckpt["model_state"])
                 previous_average = ckpt["previous_average"]
                 accuracy_matrix = ckpt["accuracy_matrix"]

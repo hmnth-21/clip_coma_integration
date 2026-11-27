@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import random
-from torch.utils.data import Dataset, DataLoader, Subset
+from torch.utils.data import Dataset, DataLoader
 from torchvision.datasets import CIFAR100
 
 

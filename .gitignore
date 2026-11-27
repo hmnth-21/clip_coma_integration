@@ -1,18 +1,28 @@
+# Environments & Caches
 .venv/
-__pycache__/
-.DS_Store
-
-# Virtual environment
-.venv/
-
-# Python cache
+venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Large model/data/output files
-clip_coma_cifar100.pt
-data/
-results/
-
-# macOS
+# Operating System Files
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Temporary Files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Datasets
+data/
+
+# Model Checkpoints (Heavy Binaries: 56 files totaling 59.75 GB preserved locally)
+*.pt
+results/**/*.pt
+
+# Allow all JSON experiment results, accuracy matrices, and metrics under results/
+!results/**/*.json
