@@ -4,7 +4,7 @@ A rigorous empirical investigation and research implementation of **task-increme
 
 ---
 
-## 📑 Research Documentation Links
+## Research Documentation Links
 
 - **Full Academic Research Paper**: [`FINAL_PROJECT_REPORT.md`](file:///c:/Users/Mukhil%20Charles/OneDrive/Desktop/clip_coma_integration/FINAL_PROJECT_REPORT.md) — 14-section formal academic paper with complete background, methodology, experimental results, stability-plasticity analysis, limitations, and literature references.
 - **Experimental Results & Audit Report**: [`FINAL_RESULTS_REPORT.md`](file:///c:/Users/Mukhil%20Charles/OneDrive/Desktop/clip_coma_integration/FINAL_RESULTS_REPORT.md) — Exhaustive verification audit across all 8 JSON outputs, 56 PyTorch checkpoints, and execution runtime logs.
@@ -73,7 +73,7 @@ clip_coma_integration/
 
 ---
 
-## ⚙️ Experimental Configuration
+## Experimental Configuration
 
 | Parameter | Configuration Value | Description |
 |---|---|---|
@@ -219,7 +219,7 @@ The pipeline incorporates automated state-recovery guards:
 
 ---
 
-## ⚠️ Scope and Academic Limitations
+## Scope and Academic Limitations
 
 To ensure honest, reproducible scientific claims:
 1. **Single Random Seed**: All reported numbers stem from seed 42. Multi-seed confidence intervals are not computed.
